@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCDEEC - Sala de Computadores do DEEC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo" class="logo">
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="pages/schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="pages/rules.html">Regras de utilização</a></li>
+                        <li><a href="pages/map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="pages/team.html">A Equipa</a></li>
+                        <li><a href="pages/hall-of-fame.html">Hall of Fame</a></li>
+                        <!-- <li><a href="pages/stats.html">Estatísticas</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/computers.html">Parque Informático</a></li>
+                        <li><a href="pages/software.html">Software Disponível</a></li>
+                        <li><a href="pages/scanning.html">Digitalização</a></li>
+                        <li><a href="pages/overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/faq-logistics.html">Logística</a></li>
+                        <li><a href="pages/faq-software.html">Software</a></li>
+                        <li><a href="pages/faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/links.html" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel" id="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://scdeec.tecnico.ulisboa.pt/images/scdeec2.jpg" alt="Software Disponível">
+                <div class="carousel-caption">
+                    <h4>Software Disponível</h4>
+                    <h1>Descobre aqui que software podes encontrar na SCDEEC</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://scdeec.tecnico.ulisboa.pt/images/people/team_24_25.jpg" alt="Equipa">
+                <div class="carousel-caption">
+                    <h4>Equipa</h4>
+                    <h1>Vem conhecer a nossa equipa!</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://scdeec.tecnico.ulisboa.pt/images/entrada.jpg" alt="Horário">
+                <div class="carousel-caption">
+                    <h4>Horário</h4>
+                    <h1>Aberta todos os dias úteis, das 8 às 20h!</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev" id="prevBtn">&#10094;</button>
+        <button class="carousel-control next" id="nextBtn">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle('active');
+        });
+
+        // Dropdown functionality for mobile - CORRIGIDO
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('.nav-link');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+            
+            if (dropdownLink && dropdownMenu) {
+                dropdownLink.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Fecha outros dropdowns
+                        dropdowns.forEach(other => {
+                            if (other !== dropdown) {
+                                other.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle atual
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+
+        // Fecha menu ao clicar num link do dropdown
+        document.querySelectorAll('.dropdown-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+            });
+        });
+
+        // Carousel functionality
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const indicators = document.querySelectorAll('.indicator');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        if (carouselItems.length > 0) {
+            let currentSlide = 0;
+            const totalSlides = carouselItems.length;
+            let autoPlayInterval;
+
+            function showSlide(index) {
+                carouselItems.forEach(item => item.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                if (index >= totalSlides) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = totalSlides - 1;
+                } else {
+                    currentSlide = index;
+                }
+                
+                carouselItems[currentSlide].classList.add('active');
+                indicators[currentSlide].classList.add('active');
+            }
+
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            if (prevBtn) prevBtn.addEventListener('click', () => {
+                prevSlide();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            if (nextBtn) nextBtn.addEventListener('click', () => {
+                nextSlide();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    showSlide(index);
+                    stopAutoPlay();
+                    startAutoPlay();
+                });
+            });
+
+            const carousel = document.getElementById('carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', stopAutoPlay);
+                carousel.addEventListener('mouseleave', startAutoPlay);
+            }
+
+            startAutoPlay();
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+            }
+        });
+    </script>
+
+</body>
+</html>
