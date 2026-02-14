@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalização - SCDEEC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body{
+            background-color: #abcbed;
+        }
+        .page-content {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .intro-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 5px solid #28a745;
+        }
+        
+        .intro-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .scanner-image {
+            max-width: 400px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .instructions-section {
+            margin-top: 50px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        
+        .step-card {
+            background: #fff;
+            border-left: 5px solid #007bff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+        
+        .step-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .step-content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .instruction-image {
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .warning-box p {
+            color: #856404;
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #0d47a1;
+        }
+        
+        @media (max-width: 768px) {
+            .scanner-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../scdeec.html"><img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo" class="logo"></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="rules.html">Regras de utilização</a></li>
+                        <li><a href="map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="team.html">A Equipa</a></li>
+                        <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computers.html">Parque Informático</a></li>
+                        <li><a href="software.html">Software Disponível</a></li>
+                        <li><a href="scanning.html">Digitalização</a></li>
+                        <li><a href="overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faq-logistics.html">Logística</a></li>
+                        <li><a href="faq-software.html">Software</a></li>
+                        <li><a href="faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="../scdeec.html#links" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <h1 class="page-title">Digitalização</h1>
+        
+        <div class="intro-section">
+            <p>O serviço de digitalização é disponibilizado por uma estação de trabalho devidamente equipada com um scanner <strong>Epson Perfection V39</strong>, ligação à internet e CD-RW.</p>
+            
+            <img src="https://scdeec.tecnico.ulisboa.pt/images/scanner_model.png" alt="Scanner Epson Perfection V39" class="scanner-image">
+            
+            <p>A digitalização de documentos é <strong>gratuita</strong> e é efectuada pelo próprio aluno. Com auxílio do software disponível para digitalização e edição de imagem podem realizar-se digitalizações de fotografias, esquemas eléctricos e textos com excelente qualidade.</p>
+        </div>
+        
+        <div class="instructions-section">
+            <h2 class="section-title">Como Digitalizar</h2>
+            
+            <!-- Step 1 -->
+            <div class="step-card">
+                <div class="step-title">
+                    <span class="step-number">1</span>
+                    Posicionar o Documento
+                </div>
+                <div class="step-content">
+                    <p>Para digitalizar, a primeira coisa a fazer é colocar a folha que quiseres digitalizar com a <strong>face virada para baixo</strong> e a <strong>parte de cima do lado mais perto de ti</strong>. Caso contrário, o scan ficará ao contrário.</p>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="step-card">
+                <div class="step-title">
+                    <span class="step-number">2</span>
+                    Iniciar o Programa EPSON Scan
+                </div>
+                <div class="step-content">
+                    <p>Em segundo lugar, iniciar o programa <span class="highlight">EPSON Scan</span> e selecionar o tipo de imagem, tamanho e resolução pretendidos.</p>
+                    <img src="https://scdeec.tecnico.ulisboa.pt/images/carregar_digitalizar.JPG" alt="Interface EPSON Scan" class="instruction-image">
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="step-card">
+                <div class="step-title">
+                    <span class="step-number">3</span>
+                    Pré-visualizar e Digitalizar
+                </div>
+                <div class="step-content">
+                    <p>A seguir, caso queiras ver como irá ficar a digitalização de maneira a ajustares as configurações seleccionadas carrega em <span class="highlight">Antever</span>. Após teres a certeza que o resultado será o pretendido, carrega em <span class="highlight">Digitalizar</span>. Abrir-se-á a seguinte janela:</p>
+                    <img src="https://scdeec.tecnico.ulisboa.pt/images/defs_digitaliazr.JPG" alt="Definições de digitalização" class="instruction-image">
+                </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="step-card">
+                <div class="step-title">
+                    <span class="step-number">4</span>
+                    Guardar o Ficheiro
+                </div>
+                <div class="step-content">
+                    <p>Deves agora decidir onde guardarás o ficheiro digitalizado e qual o seu nome. De seguida, carrega em <span class="highlight">OK</span>.</p>
+                </div>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="step-card">
+                <div class="step-title">
+                    <span class="step-number">5</span>
+                    Digitalizar Mais Páginas (Opcional)
+                </div>
+                <div class="step-content">
+                    <p>Quando a digitalização terminar abrir-se-á outra janela. Se quiseres digitalizar mais uma página, que será guardada no mesmo ficheiro da que acabaste digitalizar, carrega em <span class="highlight">Digitalizar Página</span>. Caso contrário, carrega em <span class="highlight">Salvar Ficheiro</span> e ele será guardado no local indicado anteriormente.</p>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <p>⚠️ IMPORTANTE: Finalizada a digitalização, certifica-te que guardas os ficheiros num dispositivo próprio pois, caso não o faças, correrás o risco deles serem apagados permanentemente.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile - CORRIGIDO
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('.nav-link');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+            
+            if (dropdownLink && dropdownMenu) {
+                dropdownLink.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Fecha outros dropdowns
+                        dropdowns.forEach(other => {
+                            if (other !== dropdown) {
+                                other.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle atual
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+
+        // Fecha menu ao clicar num link do dropdown
+        document.querySelectorAll('.dropdown-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu) {
+                    navMenu.classList.remove('active');
+                }
+                dropdowns.forEach(d => d.classList.remove('active'));
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navToggle && navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+            }
+        });
+    </script>
+
+</body>
+</html>

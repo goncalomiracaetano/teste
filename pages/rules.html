@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Utilização - SCDEEC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body{
+            background-color: #abcbed;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            
+        }
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        
+        .rules-section {
+            margin-bottom: 40px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .rules-header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .rules-header:hover {
+            background: #0056b3;
+        }
+        
+        .rules-content {
+            padding: 25px;
+            line-height: 1.8;
+        }
+        
+        .rules-content p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .rules-content strong {
+            color: #007bff;
+            font-weight: bold;
+        }
+        
+        .rules-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .rules-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+            color: #555;
+        }
+        
+        .rules-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .rules-list li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .prohibited-list li:before {
+            content: "✗";
+            color: #dc3545;
+        }
+        
+        .sanctions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .sanctions-table th,
+        .sanctions-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+        
+        .sanctions-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .sanctions-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .example-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .example-box p {
+            margin: 10px 0;
+            color: #856404;
+        }
+        
+        .note-box {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .note-box p {
+            margin: 5px 0;
+            color: #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../scdeec.html"><img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo" class="logo"></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="rules.html">Regras de utilização</a></li>
+                        <li><a href="map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="team.html">A Equipa</a></li>
+                        <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+                        <li><a href="stats.html">Estatísticas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computers.html">Parque Informático</a></li>
+                        <li><a href="software.html">Software Disponível</a></li>
+                        <li><a href="scanning.html">Digitalização</a></li>
+                        <li><a href="overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faq-logistics.html">Logística</a></li>
+                        <li><a href="faq-software.html">Software</a></li>
+                        <li><a href="faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <h1 class="page-title">Regras de Utilização</h1>
+        
+        <!-- Section 1: Para utilizar a SCDEEC -->
+        <div class="rules-section">
+            <div class="rules-header">Para utilizar a SCDEEC...</div>
+            <div class="rules-content">
+                <ul class="rules-list">
+                    <li>É obrigatório estar actualmente inscrito no Ensino Superior em Portugal ou no estrangeiro.</li>
+                    <li>É obrigatório dar ao monitor de serviço um cartão de indentificação válido (Santander, BPI-AEIST, CGD)*. <strong>Excepcionalmente,</strong> será aceite uma declaração de matrícula proveniente da secretaria do ano lectivo corrente.</li>
+                    <li>Em caso de lotação, os alunos não pertencentes aos cursos <strong>MEEC</strong> e <strong>MEAer,</strong> poderão a qualquer momento ter que ceder o seu lugar a estes desde que o monitor de serviço o indique.</li>
+                </ul>
+                
+                <div class="note-box">
+                    <p><strong>*Nota:</strong> Válido em qualquer instituição de Ensino Superior, com <strong>Nome</strong> e <strong>Nº de Aluno</strong>. Só é considerado um cartão como válido se até à sua data de emissão não tiverem passado mais de 3 anos e se este não apresentar sinais visíveis de maltrato.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Na SCDEEC -->
+        <div class="rules-section">
+            <div class="rules-header">Na SCDEEC...</div>
+            <div class="rules-content">
+                <ul class="rules-list">
+                    <li>É obrigatório respeitar-se sempre as indicações do monitor de serviço.</li>
+                    <li>As regras da SCDEEC aplicam-se a <strong>todo o espaço da sala</strong> e não somente aos computadores da mesma.</li>
+                    <li>Sendo uma sala de trabalho, o nível de ruído deverá ser moderado de forma a não incomodar os outros utilizadores.</li>
+                    <li>É aconselhado fazer-se log off quando se sai do computador. Aconselha-se a gravar o trabalho em dispositivo próprio, pois nas restantes todo o conteúdo é apagado ao fazer log off.</li>
+                    <li>A SCDEEC não se responsabiliza por quaisquer conteúdos ou documentos deixados pelo utilizador nos computadores.</li>
+                    <li>A SCDEEC não disponibiliza qualquer tipo de software.</li>
+                </ul>
+                
+                <h3 style="margin-top: 25px; margin-bottom: 15px; color: #dc3545;">É Proibido:</h3>
+                <ul class="rules-list prohibited-list">
+                    <li>Comer ou beber dentro das salas, bem como no corredor de acesso às mesmas.</li>
+                    <li>Danificar ou usar incorrectamente todo o material existente na SCDEEC, incluindo-se a utilização dos quadros fora do período de aulas.</li>
+                    <li>Deslocar o material e desligar quaisquer tipo de cabos dos PC's da SCDEEC.</li>
+                    <li>Mexer, ligar ou desligar os cabos de rede.</li>
+                    <li>A ausência do lugar atribuído por <strong>mais de 15 minutos</strong>. Ao fim desse tempo, serão retirados os pertences do lugar e o mesmo será disponibilizado para outro utilizador.</li>
+                    <li>Exceder a lotação indicada para cada computador.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3: No acesso à Internet -->
+        <div class="rules-section">
+            <div class="rules-header">No acesso à Internet...</div>
+            <div class="rules-content">
+                <ul class="rules-list prohibited-list">
+                    <li>É proibido jogar, ver conteúdos lúdicos e redes sociais, utilização de chats de conversação (excepto chats de email).</li>
+                    <li>É proibido utilizar qualquer aplicação, animação, vídeo ou semelhante para fins lúdicos. Vídeos didáticos ou no âmbito de trabalhos podem ser visualizados mediante autorização do monitor de serviço.</li>
+                    <li>É proibido visualizar sites cujo conteúdo seja susceptível de ofender outros utilizadores.</li>
+                    <li>A Internet não poderá ser utilizada para fins que não aqueles estipulados no regulamento interno do IST.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Desrespeito das Regras -->
+        <div class="rules-section">
+            <div class="rules-header">Desrespeito das Regras</div>
+             <div class="rules-content">
+                <p>Qualquer incumprimento das regras em vigor poderá induzir á expulsão da pessoa em causa</p>
+             </div>
+
+        <!--
+            <div class="rules-content">
+                <p>Atualmente encontra-se em vigor um sistema de infrações semelhante a uma carta de pontos, que tem as seguintes características:</p>
+                
+                <ul class="rules-list">
+                    <li>No início de cada ano lectivo todos os estudantes têm 0 pontos.</li>
+                    <li>Cada infração disitinta acumula 1 ponto.</li>
+                    <li>Cada infração repetida acumula 1 ponto <strong>por repetição</strong>.</li>
+                </ul>
+                
+                <h3 style="margin-top: 25px; margin-bottom: 15px; color: #2c3e50;">Casos especiais:</h3>
+                <ul class="rules-list">
+                    <li><strong>Desrespeitar as regras de prevenção COVID-19:</strong> 3 pontos.</li>
+                    <li><strong>Partir uma cadeira:</strong> 3 pontos.</li>
+                    <li><strong>Desrespeito a um monitor ou elemento da sala:</strong> período de suspensão a determinar pelo prof. responsável pela sala.</li>
+                </ul>
+                
+                <h3 style="margin-top: 30px; margin-bottom: 15px; color: #2c3e50;">Tabela de Sanções:</h3>
+                <table class="sanctions-table">
+                    <thead>
+                        <tr>
+                            <th>Pontos</th>
+                            <th>Suspensão durante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>24h</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>48h</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>72h</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1 Semana</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>1 Mês</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Expulsão (6 Meses)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 30px; margin-bottom: 15px; color: #2c3e50;">Exemplos:</h3>
+                
+                <div class="example-box">
+                    <p><strong>Exemplo 1:</strong></p>
+                    <p>Uma pessoa que coma na sala 1x, deixe o seu lugar por mais de 15mins 1x e balance na cadeira 1x acumula <strong>3 pontos → suspensão por 24h.</strong></p>
+                </div>
+                
+                <div class="example-box">
+                    <p><strong>Exemplo 2:</strong></p>
+                    <p>Uma pessoa que coma 1x na sala e no mesmo ano volte a comer na sala (ou seja, no total come na sala 2x) acumula 1 + 2 pontos, sendo que no total fica com <strong>3 pontos → suspensão por 24h.</strong> Se a mesma pessoa voltar a comer na sala acumulará mais 3 pontos, fazendo um total de <strong>6 pontos → suspensão por 72h.</strong></p>
+                </div>
+            </div> -->
+        </div> 
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile - CORRIGIDO
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('.nav-link');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+            
+            if (dropdownLink && dropdownMenu) {
+                dropdownLink.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Fecha outros dropdowns
+                        dropdowns.forEach(other => {
+                            if (other !== dropdown) {
+                                other.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle atual
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+
+        // Fecha menu ao clicar num link do dropdown
+        document.querySelectorAll('.dropdown-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu) {
+                    navMenu.classList.remove('active');
+                }
+                dropdowns.forEach(d => d.classList.remove('active'));
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navToggle && navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+            }
+        });
+    </script>
+
+</body>
+</html>

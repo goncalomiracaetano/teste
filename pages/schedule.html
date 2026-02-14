@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Funcionamento - SCDEEC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #abcbed;
+        }
+
+        .page-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            color: #67a0a0;
+        }
+
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .info-box {
+            background: #fdfefe;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 5px solid #007bff;
+        }
+
+        .info-box h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .info-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .info-box strong {
+            color: #007bff;
+        }
+
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .schedule-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 16px;
+        }
+
+        .schedule-list li:last-child {
+            border-bottom: none;
+        }
+
+        .calendar-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #fdfefe;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../scdeec.html"><img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo"
+                        class="logo"></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="rules.html">Regras de utilização</a></li>
+                        <li><a href="map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="team.html">A Equipa</a></li>
+                        <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+                        <li><a href="stats.html">Estatísticas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computers.html">Parque Informático</a></li>
+                        <li><a href="software.html">Software Disponível</a></li>
+                        <li><a href="scanning.html">Digitalização</a></li>
+                        <li><a href="overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faq-logistics.html">Logística</a></li>
+                        <li><a href="faq-software.html">Software</a></li>
+                        <li><a href="faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <h1 class="page-title">Horário de Funcionamento e Calendário</h1>
+
+        <div class="info-box">
+            <h2>Horário de Funcionamento</h2>
+            <p>A SCDEEC encontra-se aberta <strong>todos os dias úteis, das 08h às 20h</strong>, desde o início do
+                período de aulas até ao fim do período de exames do semestre que decorre.</p>
+            <p>Se por algum motivo inesperado este horário se alterar, irá ser colocado um aviso na página com a maior
+                antecedência possível.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Horário de Atendimento</h2>
+            <p>Estará na SCDEEC um administrador para auxiliar alunos ou docentes que o solicitem, no seguinte horário:
+            </p>
+            <ul class="schedule-list">
+                <li><strong>Segunda-feira:</strong> 10:00 às 12:00</li>
+                <li><strong>Quarta-feira:</strong> 14:00 às 17:00</li>
+                <li><strong>Quinta-feira:</strong> 10:00 às 12:30 e das 14:30 às 18:30</li>
+            </ul>
+        </div>
+
+        <img src="https://scdeec.tecnico.ulisboa.pt/images/Plano_Anual_SCDEEC_2025_2026.svg"
+            alt="Calendário SCDEEC 2025/2026" class="calendar-image">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile - CORRIGIDO
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('.nav-link');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+            
+            if (dropdownLink && dropdownMenu) {
+                dropdownLink.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Fecha outros dropdowns
+                        dropdowns.forEach(other => {
+                            if (other !== dropdown) {
+                                other.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle atual
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+
+        // Fecha menu ao clicar num link do dropdown
+        document.querySelectorAll('.dropdown-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu) {
+                    navMenu.classList.remove('active');
+                }
+                dropdowns.forEach(d => d.classList.remove('active'));
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navToggle && navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+            }
+        });
+    </script>
+
+</body>
+
+</html>
