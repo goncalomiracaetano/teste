@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso à SCDEEC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body{
+            background-color: #abcbed;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        
+        .info-section {
+            margin-bottom: 50px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .info-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        
+        .info-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .statue-image {
+            max-width: 200px;
+            height: auto;
+            float: left;
+            margin: 0 30px 20px 0;
+            border-radius: 10px;
+        }
+        
+        .map-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-box {
+            background: #e3f2fd;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .highlight-box p {
+            color: #0d47a1;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .statue-image {
+                float: none;
+                margin: 0 auto 20px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../scdeec.html"><img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo" class="logo"></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="rules.html">Regras de utilização</a></li>
+                        <li><a href="map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="team.html">A Equipa</a></li>
+                        <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computers.html">Parque Informático</a></li>
+                        <li><a href="software.html">Software Disponível</a></li>
+                        <li><a href="scanning.html">Digitalização</a></li>
+                        <li><a href="overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faq-logistics.html">Logística</a></li>
+                        <li><a href="faq-software.html">Software</a></li>
+                        <li><a href="faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <h1 class="page-title">Acesso à SCDEEC</h1>
+        
+        <!-- Section 1: Onde fica -->
+        <div class="info-section">
+            <h2>Onde fica a SCDEEC?</h2>
+            
+            <img src="https://scdeec.tecnico.ulisboa.pt/images/estatua.gif" alt="O Engenho" class="statue-image">
+            
+            <p>As instalações da SCDEEC ficam na cave do Pavilhão de Electricidade adjacente à Torre Norte.</p>
+            
+            <p>Para chegar à SCDEEC entra-se pela porta principal da Torre Norte, sobe-se ao 1º piso pelas escadas, contorna-se o hall do elevador pela esquerda e segue-se pelo corredor até se passar para a parte antiga do edifício - o Pavilhão de Electricidade. Chegado a um novo corredor, vira-se à direita em direcção às escadas e desce-se até ao último piso. A SCDEEC fica à esquerda ao fundo do corredor.</p>
+            
+            <div class="highlight-box" style="clear: both;">
+                <p><strong>💡 Atalho:</strong> Durante a semana, das 8h00 às 20h00, é possível chegar à SCDEEC entrando directamente pela porta lateral do Pavilhão de Electricidade e descendo o lance de escadas.</p>
+            </div>
+        </div>
+
+        <!-- Section 2: Quem pode utilizar -->
+        <div class="info-section">
+            <h2>Quem pode utilizar a SCDEEC?</h2>
+            <p>O acesso à SCDEEC é permitido a qualquer aluno inscrito num curso de graduação do Instituto Superior Técnico ou de outra faculdade, instituto ou universidade desde que provem a sua situação através da apresentação de um cartão de identificação válido.</p>
+        </div>
+
+        <!-- Section 3: O que encontrar -->
+        <div class="info-section">
+            <h2>O que posso encontrar na SCDEEC?</h2>
+            <p>A SCDEEC disponibiliza <strong>72 Estações de Trabalho</strong> devidamente equipadas com ferramentas de trabalho para a maioria das cadeiras leccionadas em MEEC. Na SCDEEC é também possível aceder à internet e digitalizar e imprimir documentos.</p>
+            
+            <img src="https://scdeec.tecnico.ulisboa.pt/images/mapa_scdeec.jpg" alt="Mapa da SCDEEC" class="map-image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navToggle && navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#myCarousel') {
+                    e.preventDefault();
+                    if (navMenu) navMenu.classList.remove('active');
+                    
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

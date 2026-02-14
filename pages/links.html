@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Disponível - SCDEEC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body{
+            background-color: #abcbed;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .software-section {
+            margin-bottom: 50px;
+        }
+        .software-section h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #007bff;
+        }
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .software-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border-left: 3px solid #007bff;
+            transition: all 0.3s;
+        }
+        .software-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../scdeec.html"><img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo" class="logo"></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="rules.html">Regras de utilização</a></li>
+                        <li><a href="map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="team.html">A Equipa</a></li>
+                        <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computers.html">Parque Informático</a></li>
+                        <li><a href="software.html">Software Disponível</a></li>
+                        <li><a href="scanning.html">Digitalização</a></li>
+                        <li><a href="overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faq-logistics.html">Logística</a></li>
+                        <li><a href="faq-software.html">Software</a></li>
+                        <li><a href="faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <h1 class="page-title">Links Úteis</h1>
+        
+        <div class="software-section">
+            <h2>Instituto Superior Tecnico</h2>
+            <div class="software-grid">
+                <!-- <div class="software-item"><a href="https://tecnico.ulisboa.pt/pt/">Instituto Superior Tecnico</a></div>
+                <div class="software-item"><a href="https://id.tecnico.ulisboa.pt/cas/login">Fenix</a></div>
+                <div class="software-item"><a href="https://fenix.tecnico.ulisboa.pt/departamentos/deec">DEEC</a></div>
+                <div class="software-item"><a href="https://www.sas.ulisboa.pt/index.php">Refeitorio</a></div> -->
+                <div class="software-item"><a href="https://tecnico.ulisboa.pt/pt/" target="_blank" rel="noopener noreferrer">Instituto Superior Tecnico</a></div>
+                <div class="software-item"><a href="https://id.tecnico.ulisboa.pt/cas/login" target="_blank" rel="noopener noreferrer">Fenix</a></div>
+                <div class="software-item"><a href="https://fenix.tecnico.ulisboa.pt/departamentos/deec" target="_blank" rel="noopener noreferrer">DEEC</a></div>
+                <div class="software-item"><a href="https://www.sas.ulisboa.pt/index.php" target="_blank" rel="noopener noreferrer">Refeitorio</a></div>
+                <div class="software-item"><a href="https://scdeec.tecnico.ulisboa.pt/mepp/index.php/mestrado/" target="_blank" rel="noopener noreferrer">MEPP (modelo de Ensino)</a></div>
+                <div class="software-item"><a href="https://tecnico.ulisboa.pt/pt/ensino/cursos/modelo-de-ensino/" target="_blank" rel="noopener noreferrer">MEPP (modelo de Ensino)</a></div>
+            </div>
+        </div>
+
+        <div class="software-section">
+            <h2>Alunos</h2>
+            <div class="software-grid">
+                <div class="software-item"><a href="https://nape.tecnico.ulisboa.pt/" target="_blank" rel="noopener noreferrer">NAPE (Nucleo de apoio ao Estudante)</a></div>
+                <div class="software-item"><a href="https://neecist.org/" target="_blank" rel="noopener noreferrer">NEEC</a></div>
+                <div class="software-item"><a href="https://aeist.pt/" target="_blank" rel="noopener noreferrer">AEIST</a></div>
+              </div>
+        </div>
+
+        <div class="software-section">
+            <h2>Diversos</h2>
+            <div class="software-grid">
+                <div class="software-item"><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE</a></div>
+                <div class="software-item"><a href="https://scholar.google.pt/" target="_blank" rel="noopener noreferrer">Google Scholar</a></div>
+                <div class="software-item"><a href="https://overleaf.scdeec.tecnico.ulisboa.pt" target="_blank" rel="noopener noreferrer">Overleaf SCDEEC</a></div>
+              </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navToggle && navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#myCarousel') {
+                    e.preventDefault();
+                    if (navMenu) navMenu.classList.remove('active');
+                    
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

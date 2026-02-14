@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Informático - SCDEEC</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body{
+            background-color: #abcbed;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            margin: 40px 0 30px;
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        
+        .computers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .computer-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #007bff;
+        }
+        
+        .computer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .computer-card h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .spec-item {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        
+        .spec-label {
+            font-weight: bold;
+            color: #007bff;
+            min-width: 120px;
+            margin-right: 10px;
+        }
+        
+        .spec-value {
+            color: #555;
+            flex: 1;
+        }
+        
+        .rooms-section {
+            margin-top: 50px;
+        }
+        
+        .room-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .room-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        
+        .room-computers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .room-computer-item {
+            background: rgba(255,255,255,0.15);
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .computer-count {
+            background: rgba(255,255,255,0.3);
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .scanner-card {
+            background: #f8f9fa;
+            border-left: 5px solid #28a745;
+        }
+        
+        @media (max-width: 768px) {
+            .computers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .room-computers {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../scdeec.html"><img src="https://scdeec.tecnico.ulisboa.pt/images/logo.png" alt="SCDEEC Logo" class="logo"></a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Informações</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="access.html">Acesso à SCDEEC</a></li>
+                        <li><a href="schedule.html">Horário de Funcionamento e Calendário</a></li>
+                        <li><a href="rules.html">Regras de utilização</a></li>
+                        <li><a href="map.html">Mapa da SCDEEC</a></li>
+                        <li><a href="team.html">A Equipa</a></li>
+                        <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Serviços</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computers.html">Parque Informático</a></li>
+                        <li><a href="software.html">Software Disponível</a></li>
+                        <li><a href="scanning.html">Digitalização</a></li>
+                        <li><a href="overleaf.html">Overleaf</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">FAQ's</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faq-logistics.html">Logística</a></li>
+                        <li><a href="faq-software.html">Software</a></li>
+                        <li><a href="faq-rules.html">Regras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <h1 class="page-title">Parque Informático</h1>
+        
+        <h2 class="section-title">Especificações dos Computadores e Restante Hardware</h2>
+        
+        <div class="computers-grid">
+            <!-- HDD -->
+            <div class="computer-card">
+                <h3>HDD</h3>
+                <div class="spec-item">
+                    <span class="spec-label">CPU:</span>
+                    <span class="spec-value">Intel Core i5-7500 @ 3.40 GHz Quad-Core</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">RAM:</span>
+                    <span class="spec-value">8 GB, DDR4, 2133 MHz</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Hard Drive:</span>
+                    <span class="spec-value">1 TB HDD</span>
+                </div>
+            </div>
+            
+            <!-- Nox One -->
+            <div class="computer-card">
+                <h3>Nox One</h3>
+                <div class="spec-item">
+                    <span class="spec-label">CPU:</span>
+                    <span class="spec-value">Intel Core i5-7500 @ 3.40 GHz Quad-Core</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">RAM:</span>
+                    <span class="spec-value">8 GB, DDR4, 2133 MHz</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Hard Drive:</span>
+                    <span class="spec-value">1 TB nvme</span>
+                </div>
+            </div>
+            
+            <!-- Nox Pax -->
+            <div class="computer-card">
+                <h3>Nox Pax</h3>
+                <div class="spec-item">
+                    <span class="spec-label">CPU:</span>
+                    <span class="spec-value">AMD Ryzen 7 2700 @ 3.20 GHz Eight-Core</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">RAM:</span>
+                    <span class="spec-value">8 GB, DDR4, 2000 MHz</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Hard Drive:</span>
+                    <span class="spec-value">1 TB nvme</span>
+                </div>
+            </div>
+            
+            <!-- ProDesktop UMX3 -->
+            <div class="computer-card">
+                <h3>ProDesktop UMX3</h3>
+                <div class="spec-item">
+                    <span class="spec-label">CPU:</span>
+                    <span class="spec-value">AMD Ryzen 5 5600G @ 3.9GHz Hexa-Core</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">RAM:</span>
+                    <span class="spec-value">16 GB, DDR4 SDRAM, 3200 MHz</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Hard Drive:</span>
+                    <span class="spec-value">1 TB nvme</span>
+                </div>
+            </div>
+            
+            <!-- Tacens -->
+            <div class="computer-card">
+                <h3>Tacens</h3>
+                <div class="spec-item">
+                    <span class="spec-label">CPU:</span>
+                    <span class="spec-value">AMD Ryzen 5 5600G @ 3.9GHz Hexa-Core</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">RAM:</span>
+                    <span class="spec-value">16 GB, DDR4 SDRAM, 3200 MHz</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Hard Drive:</span>
+                    <span class="spec-value">1 TB nvme</span>
+                </div>
+            </div>
+            
+            <!-- Scanner -->
+            <div class="computer-card scanner-card">
+                <h3>Scanner</h3>
+                <div class="spec-item">
+                    <span class="spec-label">Modelo:</span>
+                    <span class="spec-value">Epson Perfection V39</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Sensor Óptico:</span>
+                    <span class="spec-value">CIS (Contact Image Sensor)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Resolução:</span>
+                    <span class="spec-value">4800 dpi</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Rooms Section -->
+        <div class="rooms-section">
+            <h2 class="section-title">Salas e Número de Computadores por Sala</h2>
+            
+            <div class="room-card">
+                <h3>SCDEEC1</h3>
+                <div class="room-computers">
+                    <div class="room-computer-item">
+                        <span>Nox Pax</span>
+                        <span class="computer-count">10</span>
+                    </div>
+                    <div class="room-computer-item">
+                        <span>Nox One</span>
+                        <span class="computer-count">12</span>
+                    </div>
+                    <div class="room-computer-item">
+                        <span>HDD</span>
+                        <span class="computer-count">10</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-card">
+                <h3>SCDEEC2</h3>
+                <div class="room-computers">
+                    <div class="room-computer-item">
+                        <span>Tacens</span>
+                        <span class="computer-count">18</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-card">
+                <h3>SCDEEC3</h3>
+                <div class="room-computers">
+                    <div class="room-computer-item">
+                        <span>Nox Pax</span>
+                        <span class="computer-count">6</span>
+                    </div>
+                    <div class="room-computer-item">
+                        <span>ProDesktop UMX3</span>
+                        <span class="computer-count">11</span>
+                    </div>
+                    <div class="room-computer-item">
+                        <span>Tacens</span>
+                        <span class="computer-count">3</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-card">
+                <h3>Acesso Rápido</h3>
+                <div class="room-computers">
+                    <div class="room-computer-item">
+                        <span>Gigabyte</span>
+                        <span class="computer-count">1</span>
+                    </div>
+                    <div class="room-computer-item">
+                        <span>Scanner</span>
+                        <span class="computer-count">1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>© SCDEEC 2026</h4>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-section">
+                    <p>Instituto Superior Técnico,</p>
+                    <p>Pavilhão de Electricidade,</p>
+                    <p>Piso 1</p>
+                </div>
+                <div class="footer-section">
+                    <p>Email:</p>
+                    <p><a href="mailto:scdeec@scdeec.tecnico.ulisboa.pt">scdeec@scdeec.tecnico.ulisboa.pt</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Dropdown functionality for mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navToggle && navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#myCarousel') {
+                    e.preventDefault();
+                    if (navMenu) navMenu.classList.remove('active');
+                    
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
